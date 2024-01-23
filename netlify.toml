@@ -1,0 +1,12 @@
+[[redirects]]
+from = "/posts/:post_name"
+to = "https://swiftpackageindex.com/blog/:post_name/?"
+headers = { X-From = "Netlify" }
+status = 301
+force = true
+
+[[redirects]]
+from = "/feed.rss"
+to = "https://swiftpackageindex.com/blog/feed.xml"
+status = 301
+force = true
