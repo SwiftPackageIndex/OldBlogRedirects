@@ -1,3 +1,6 @@
+# The order of this rule is important. If it is placed after the catch-all rule for blog posts, it will
+# redirect the feed to https://swiftpackageindex.com/blog/feed.rss, which is close, but subtly different
+# from https://swiftpackageindex.com/blog/feed.xml, which is the correct URL.
 [[redirects]]
 from = "/posts/feed.rss"
 to = "https://swiftpackageindex.com/blog/feed.xml"
@@ -5,6 +8,7 @@ headers = { X-From = "Netlify" }
 status = 301
 force = true
 
+# Redirect the root of the domain, and the /posts/ directory to the new blog.
 [[redirects]]
 from = "/"
 to = "https://swiftpackageindex.com/blog"
@@ -26,6 +30,7 @@ headers = { X-From = "Netlify" }
 status = 301
 force = true
 
+# Redirect the old blog post URLs to the new blog post URLs.
 [[redirects]]
 from = "/posts/:post_name"
 to = "https://swiftpackageindex.com/blog/:post_name"
