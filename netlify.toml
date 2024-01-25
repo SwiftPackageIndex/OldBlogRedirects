@@ -34,7 +34,7 @@ status = 301
 force = true
 
 [[redirects]]
-from = "/feed.rss"
+from = "/posts/feed.rss"
 to = "https://swiftpackageindex.com/blog/feed.xml"
 headers = { X-From = "Netlify" }
 status = 301
