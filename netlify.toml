@@ -8,6 +8,13 @@ headers = { X-From = "Netlify" }
 status = 301
 force = true
 
+[[redirects]]
+from = "/feed.rss"
+to = "https://swiftpackageindex.com/blog/feed.xml"
+headers = { X-From = "Netlify" }
+status = 301
+force = true
+
 # Redirect the root of the domain, and the /posts/ directory to the new blog.
 [[redirects]]
 from = "/"
